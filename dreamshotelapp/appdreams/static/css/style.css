@@ -1,0 +1,92 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+#logoImg{
+    width :200px;
+    height: 50px;
+    margin: 17px 25px 0px 0;
+}
+#hotelName{
+    float: right ;
+    margin:17px 25px 0px 0;
+    color: #323232;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'FuturaStd-CondensedBoldObl', sans-serif;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #d2d2d2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 0 0 239px;
+    font-family: 'FuturaStd-Book', sans-serif;
+  }
+  
+  li a:hover {
+    background-color: rgb(83, 80, 80);
+  }
+  #mainImg{
+         width: 1346px;
+    margin: 0 0 0 0;
+    height: 400px;
+  }
+ 
+#content{
+    display: flex;
+    justify-content: right;
+    margin: 53px 0 0 0;
+}
+p{
+    font-family: unset;
+    color: #3d3c3c;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 32px 0 0 55px;
+    padding: 18px 15px 4px 4px;
+
+}
+#theHotelDesc{
+    width: 1220px;
+}
+#access{
+    border-left: 1px solid black;
+}
+#address_img {
+    width: 24px;
+    margin: 0 10px 0 30px;
+    float: left;
+    height: 38px;
+    
+}
+
+#access_title{
+   color: #77406f;
+}
+#hotel_title{
+    font-family: 'FuturaStd-CondensedBoldObl', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+#access_para{
+margin: 0 0 0 0;
+float: 0 0 0 0;
+}
+#access_content{
+    margin: 0 0 0 24px;
+}
