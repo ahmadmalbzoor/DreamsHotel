@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voucher.css">
+    {% load static %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/voucher.css' %}">
+    <title>Boooking Confirmation</title>
+</head>
+<body>
+    <Header>
+        <h1 class="bookingInfo"> Dreams Hotel Confirmation Number</h1>
+        <img src="{% static 'img/voucher/completed.png"'  %}" >
+        <H3 class="bookingInfo"># xxxxxxx</H3>
+        <h3 class="bookingInfo ">Customer Information</h3><br><br>
+    </Header>
+    <article>
+            <div id="">
+                
+                <hr>
+                <label class=" customerInfo ">Customer Name:</label><label class="hname cname">Mohammad Mohammad</label><br><br>
+                <label class=" customerInfo">Mobile Number:</label><label class="hname">0568000000</label><br><br>
+                <label class=" customerInfo">Email:</label><label class="hname email" >Customer@email.com</label><br><br>
+                <h3 class="bookingInfo ">Rooms details</h3>
+                <img src="hotel_triplanco.jpg" alt="">
+            </div>    
+    </article>
+    <article>
+            <div id="">
+                    
+                <hr>
+                <label class=" customerInfo">Room Type:</label><label class="hname roomty">Double Room</label><br><br>
+                <label class=" customerInfo">Check-in Date:</label><label class="hname Check-in">12-20-2021</label><br><br>
+                <label class=" customerInfo">Check-out Date:</label><label class="hname checkOutDate">12-20-2021</label><br><br>
+                <p id="cancellation">Cancellation policy: Hotel Policies. The cancellation is free of charge 7 days prior to the date of arrival,
+                                      <br>after this time we charge you 90% the room rate as cancellation fee.</p>
+            </div>  
+    </article>
+    <footer>
+        <hr>
+        <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+            <div class="w3-third fontsize"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, Chicago, US</div>
+            <div class="w3-third fontsize"><i class="fa fa-phone w3-text-red"></i> Phone: +00 151515</div>
+            <div class="w3-third fontsize"><i class="fa fa-envelope w3-text-red"></i> Email: mail@mail.com</div>
+        </div>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.bookingInfo{
+    text-align: center;
+    margin: 32px -25px 0 0;
+    color: #4c4e56;
+}
+.customerInfo{
+    margin: 0px 0 0 480px;
+    color: #4c4e56;
+}
+article{
+    align-items: center;
+}
+img{
+    width: 150px;
+    margin: 62px 0 0 618px;
+
+}
+.hname {
+    margin: 36px 0 0 169px;
+    color: #4c4e56;
+}
+.email{
+    margin: 0 0 0 243px;
+}
+.checkOutDate{
+    margin: 0 0 0 179px;
+}
+
+
+#cancellation {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 10px;
+    color: #4c4e56;
+}
+.Check-in{
+    margin: 0 0 0 190px;
+}
+
+.fontsize{
+font-size: 12px;
+color:#4c4e56 ;
+}
+.cname{
+    margin: 0 0 0 161px;
+}
+.roomty{
+    margin: 0 0 0 211px;
+}
