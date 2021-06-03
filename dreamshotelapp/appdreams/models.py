@@ -37,3 +37,9 @@ class Reversation(models.Model):
     total_price=models.IntegerField()
 
 
+class RoomAvalability(models.Model):
+    room=models.ForeignKey(Room,related_name="Avalability",on_delete=models.CASCADE)
+    reserved_date=models.DateField()
+    is_booked=models.BooleanField(default=True)
+
+
