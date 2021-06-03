@@ -1,3 +1,15 @@
 from django.contrib import admin
+from django.contrib.admin import options
+from django.contrib.admin.filters import ListFilter
+from django.db.models.query_utils import FilteredRelation
+from django.utils.html import format_html
 
-# Register your models here.
+
+from . import models
+from .models import *
+
+class RoomAdmin(admin.ModelAdmin):
+      list_display = ('desc', 'room_name' , 'price' ,'hotel')
+
+
+admin.site.register(Room , RoomAdmin)

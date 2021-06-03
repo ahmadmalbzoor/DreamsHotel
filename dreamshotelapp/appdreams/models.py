@@ -17,13 +17,10 @@ class Customer(models.Model):
 
 class Room(models.Model):
     desc=models.TextField()
-    img_url=models.CharField(max_length=255)
+   
     room_name=models.CharField(max_length=255)
     price=models.IntegerField()
-    booking_by=models.ManyToManyField(Customer,through="Reversation")
-    check_in=models.DateField()
-    check_out=models.DateField()
-    is_booked=models.BooleanField()
+    booking_by=models.ManyToManyField(Customer,through="Reversation") 
     hotel=models.ForeignKey(Hotel,related_name="hotelrooms",on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
