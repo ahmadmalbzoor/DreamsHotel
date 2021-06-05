@@ -27,8 +27,9 @@
                 <h1>Confirm Your Booking</h1>
             </div>
             <div>
-            <img src="assets/images/th.jpg" id="confimg" alt="">
+            <img src="{% static 'img/cards/th.jpg' %}" id="confimg" alt="room">
             </div>
+
             <div class="payment">
                 <form>
                     <div>
@@ -37,7 +38,7 @@
                     </div>
                     <div>
                         <label >Last Name</label>
-                        <input type="text" name="first_name" id="" class="customerInfo" required><br>
+                        <input type="text" name="last_name" id="" class="customerInfo" required><br>
                     </div>
                     <div>
                         <label for="">Email</label>
@@ -88,12 +89,14 @@
                             <option value="19"> 2019</option>
                             <option value="20"> 2020</option>
                             <option value="21"> 2021</option>
+                            <option value="21"> 2022</option>
+                            <option value="21"> 2023</option>
                         </select>
                     </div>
                     <div class="form-group" id="credit_cards">
-                        <img src="assets/images/visa.jpg" id="visa">
-                        <img src="assets/images/mastercard.jpg" id="mastercard">
-                        <img src="assets/images/amex.jpg" id="amex">
+                        <img src="{% static 'img/cards/visa.jpg' %}" id="visa" alt="visa">
+                        <img src="{% static 'img/cards/mastercard.jpg' %}" id="mastercard" alt="mastercard">
+                        <img src="{% static 'img/cards/amex.jpg' %}" id="amex" alt="amex">
                     </div>
                     <div class="form-group" id="pay-now">
                         <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>

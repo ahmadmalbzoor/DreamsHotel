@@ -1,6 +1,19 @@
 from django.db import models
 from django.db.models.base import Model
 
+# class Room(models.Model):
+#     desc=models.TextField()
+#     img_url=models.CharField(max_length=255)
+#     room_name=models.CharField(max_length=255)
+#     price=models.IntegerField()
+#     booking_by=models.ManyToManyField(Customer,through="Reversation")
+#     check_in=models.DateField()
+#     check_out=models.DateField()
+#     is_booked=models.BooleanField()
+#     hotel=models.ForeignKey(Hotel,related_name="hotelrooms",on_delete=models.CASCADE)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True) from reem
+
 class Hotel(models.Model):
     name=models.CharField(max_length=255)
     desc=models.TextField()
@@ -17,7 +30,6 @@ class Customer(models.Model):
 
 class Room(models.Model):
     desc=models.TextField()
-   
     room_name=models.CharField(max_length=255)
     price=models.IntegerField()
     booking_by=models.ManyToManyField(Customer,through="Reversation") 
@@ -38,5 +50,8 @@ class RoomAvalability(models.Model):
     room=models.ForeignKey(Room,related_name="Avalability",on_delete=models.CASCADE)
     reserved_date=models.DateField()
     is_booked=models.BooleanField(default=True)
+
+
+
 
 
