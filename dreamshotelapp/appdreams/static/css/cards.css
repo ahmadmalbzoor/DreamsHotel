@@ -107,6 +107,23 @@
 
 
 
+#titlename
+{
+  text-align: center;
+  float: left;
+  margin-left: 13%;
+  margin-top: 0.72%;
+  font: 30px  cursive;  
+  color: white;
+  }
+
+.navlist{
+  color: white;
+  margin-top: 6%;
+}
+
+
+
 @media(max-width: 650px) {
     .creditCardForm .owner,
     .creditCardForm .CVV,
@@ -118,5 +135,4 @@
         text-align: left;
     }
 }
-
 

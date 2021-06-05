@@ -18,6 +18,20 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+        <img class="w3-bar-item w3-logo w3-mobile"  src="{% static 'img/Capture.png' %}"  alt="logo"  width="100" height="60">
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a class="navlist" href="#home">Home</a></li>
+            <li><a class="navlist" href="#">Facilities</a></li>
+            <li><a class="navlist" href="#">Spical Offers</a></li>
+          </ul>
+            <p class="text center" id="titlename">Dreams Hotel</p>
+        </div>
+      </nav>
     
     <div class="container-fluid">
       
@@ -27,15 +41,12 @@
                 <h1>Confirm Your Booking</h1>
             </div>
             <div>
-<<<<<<< HEAD
             <img src="{% static 'img/cards/th.jpg' %}" id="confimg" alt="room">
-=======
-            <img src="{% static 'img/cards/th.jpg' %}" id="confimg" alt="">
->>>>>>> 9c840825a7223adf723036b29de5dac4e2fa314c
             </div>
 
             <div class="payment">
-                <form>
+                <form action="voucher" method="post">
+                    {% csrf_token %}
                     <div>
                         <label >First Name</label>
                         <input type="text" name="first_name" id="" class="customerInfo" required><br>
@@ -87,7 +98,6 @@
                             <option value="12">December</option>
                         </select>
                         <select>
-<<<<<<< HEAD
                             <option value="16"> 2016</option>
                             <option value="17"> 2017</option>
                             <option value="18"> 2018</option>
@@ -102,20 +112,6 @@
                         <img src="{% static 'img/cards/visa.jpg' %}" id="visa" alt="visa">
                         <img src="{% static 'img/cards/mastercard.jpg' %}" id="mastercard" alt="mastercard">
                         <img src="{% static 'img/cards/amex.jpg' %}" id="amex" alt="amex">
-=======
-                            <option value="16"> 2021</option>
-                            <option value="17"> 2022</option>
-                            <option value="18"> 2023</option>
-                            <option value="19"> 2024</option>
-                            <option value="20"> 2025</option>
-                            <option value="21"> 2026</option>
-                        </select>
-                    </div>
-                    <div class="form-group" id="credit_cards">
-                        <img src="{% static 'img/cards/visa.jpg' %}" id="visa">
-                        <img src="{% static 'img/cards/mastercard.jpg' %}" id="mastercard">
-                        <img src="{% static 'img/cards/amex.jpg' %}" id="amex">
->>>>>>> 9c840825a7223adf723036b29de5dac4e2fa314c
                     </div>
                     <div class="form-group" id="pay-now">
                         <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
@@ -123,14 +119,8 @@
                 </form>
             </div>
         </div>
-
-      
-
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/appdreams/static/js/jquery.payform.min.js" charset="utf-8"></script>
-    <script src="assets/js/script.js"></script>
+
     <footer class="w3-padding-32 w3-black w3-center w3-margin-top">
         <h5>Find Us On</h5>
         <div class="w3-xlarge w3-padding-16">
@@ -141,7 +131,9 @@
           <i class="fa fa-twitter w3-hover-opacity"></i>
           <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
-        <p>Dreams Hotel <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"></a></p>
+        <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +00 151515<br>
+      <p> <a href="#">Terms of use</a> | <a href="#">Privcy</a> |  <a href="#">Site Map</a></p>
+        <p>@ Copyright 2021</p>
       </footer>
 </body>
 

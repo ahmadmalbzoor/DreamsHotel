@@ -1,24 +1,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="voucher.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     {% load static %}
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/voucher.css' %}">
     <title>Boooking Confirmation</title>
+  
 </head>
 <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+        <img class="w3-bar-item w3-logo w3-mobile"  src="{% static 'img/Capture.png' %}"  alt="logo"  width="100" height="60">
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a class="navlist" href="#home">Home</a></li>
+            <li><a class="navlist" href="#">Facilities</a></li>
+            <li><a class="navlist" href="#">Spical Offers</a></li>
+          </ul>
+            <p class="text center" id="titlename">Dreams Hotel</p>
+        </div>
+      </nav><br><br>
+
     <Header>
-        <h1 class="bookingInfo"> Dreams Hotel Confirmation Number</h1>
-<<<<<<< HEAD
-        <img src="{% static 'img/voucher/completed.png' %}" alt="completed">
-=======
-        <img src="{% static 'img/voucher/completed.png' %}" >
->>>>>>> 9c840825a7223adf723036b29de5dac4e2fa314c
+        <h1 class="Confirmation"> Dreams Hotel Confirmation Number</h1>
+        <img src="{% static 'img/voucher/completed.png' %}" alt="completed" id="complete">
         <H3 class="bookingInfo"># xxxxxxx</H3>
         <h3 class="bookingInfo ">Customer Information</h3><br><br>
     </Header>
@@ -30,11 +43,7 @@
                 <label class=" customerInfo">Mobile Number:</label><label class="hname">0568000000</label><br><br>
                 <label class=" customerInfo">Email:</label><label class="hname email" >Customer@email.com</label><br><br>
                 <h3 class="bookingInfo ">Rooms details</h3>
-<<<<<<< HEAD
-                <img src="{% static 'img/voucher/hotel_triplanco.jpg' %}" alt="hotel_triplanco">
-=======
-                <img src="{% static 'img/voucher/hotel_triplanco.jpg' %}" alt="">
->>>>>>> 9c840825a7223adf723036b29de5dac4e2fa314c
+                <img src="{% static 'img/voucher/hotel_triplanco.jpg' %}" alt="hotel_triplanco" id="imgroom">
             </div>    
     </article>
     <article>
@@ -42,25 +51,25 @@
                     
                 <hr>
                 <label class=" customerInfo">Room Type:</label><label class="hname roomty">Double Room</label><br><br>
-                <label class=" customerInfo">Room Description:</label><label class="hname roomty">Double Room</label><br><br>
                 <label class=" customerInfo">Check-in Date:</label><label class="hname Check-in">12-20-2021</label><br><br>
                 <label class=" customerInfo">Check-out Date:</label><label class="hname checkOutDate">12-20-2021</label><br><br>
                 <p id="cancellation">Cancellation policy: Hotel Policies. The cancellation is free of charge 7 days prior to the date of arrival,
-                                      <br>after this time we charge you 90% the room rate as cancellation fee.</p>
+                <br>after this time we charge you 90% the room rate as cancellation fee.</p>
             </div>  
     </article>
-    <div>
-        <h3 class="bookingInfo ">Our Location</h3><br><br>
-        <img src="{% static 'img/voucher/location.jpg' %}" class="imglocation" alt="">
-    </div>
-    <footer>
-        <hr>
-        <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
-            <div class="w3-third fontsize"><i class="fa fa-map-marker w3-text-red"></i> 423 Some adr, Chicago, US</div>
-            <div class="w3-third fontsize"><i class="fa fa-phone w3-text-red"></i> Phone: +00 151515</div>
-            <div class="w3-third fontsize"><i class="fa fa-envelope w3-text-red"></i> Email: mail@mail.com</div>
+    <footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+        <h5>Find Us On</h5>
+        <div class="w3-xlarge w3-padding-16">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
-        
-    </footer>
+        <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +00 151515<br>
+      <p> <a href="#">Terms of use</a> | <a href="#">Privcy</a> |  <a href="#">Site Map</a></p>
+        <p>@ Copyright 2021</p>
+      </footer>
 </body>
 </html>
