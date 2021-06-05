@@ -59,11 +59,17 @@
                   <h3>Your Stay</h3>
                   <form action="/action_page.php">
                     <p><label><i class="fa fa-calendar-check-o"></i> Check In</label><span style="margin: 2%;">  </span><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
-                    <p>4/06/2021 <span style="margin: 5%;">  </span>10/06/2021</p>
-                    <p># nights</p>
+                    <p>4/06/2021 <span style="margin: 5%;">  </span>10/06/2021 <span style="margin-left: 8%;">  </span># nights</p>
                     <p><label><i class="fa fa-male"></i> Adults</label></p>
                     <p>number</p>         
-                    </form>
+                    </form><br>
+                    <form action="/cards" method="POST">
+                      {% csrf_token %}
+                      <p><label>Room Type </label></p>
+                      <p>room one </p>
+                      <p><label>Total Price:</label></p>
+                      <input type="submit" value="Book" name="bookroom" class="btn btn-primary">
+                      </form>
           </div>
       </div>
       
@@ -76,7 +82,7 @@
             <div class="card-body">
               <h3 class="card-title">Single Room</h3>
               <p class="card-text"> Single bed</p><p class="card-text">15m<sup>2</sup></p><p class="card-text"> Price $99 / <span id="price">per night</p>
-              <a href="/cards" class="btn btn-primary">Choose Room</a>
+              <a href="/rooms" class="btn btn-primary">Choose Room</a>
             </div>
           </div><br><hr>
                   <div class="card" style="width: 60%;display: flex;">
@@ -84,7 +90,7 @@
             <div class="card-body">
               <h3 class="card-title">Delux Double Room</h3>
               <p class="card-text">Double King-size bed</p><p class="card-text">40m<sup>2</sup></p><p class="card-text"> Price $300 / <span id="price">per night</p>
-              <a href="/cards" class="btn btn-primary">Choose Room</a>
+              <a href="/rooms" class="btn btn-primary">Choose Room</a>
             </div>
           </div>
           
@@ -94,7 +100,7 @@
             <div class="card-body">
               <h3 class="card-title">Double Room</h3>
               <p class="card-text">Queen-size bed</p><p class="card-text">25m<sup>2</sup></p><p class="card-text"> Price $180 / <span id="price">per night</p>
-              <a href="/cards" class="btn btn-primary">Choose Room</a>
+              <a href="/rooms" class="btn btn-primary">Choose Room</a>
             </div>
           </div><br><hr>
           <div class="card" style="width: 60%;display: flex;">
@@ -102,7 +108,7 @@
             <div class="card-body">
               <h3 class="card-title">Double Room</h3>
               <p class="card-text">Two Single bed</p><p class="card-text">30m<sup>2</sup></p><p class="card-text"> Price $200 / <span id="price">per night</p>
-              <a href="/cards" class="btn btn-primary">Choose Room</a>
+              <a href="/rooms" class="btn btn-primary">Choose Room</a>
             </div>
           </div>
               </div>

@@ -6,7 +6,7 @@ from django.shortcuts import render,redirect
 # import bcrypt
 
 def index(request):
-    return render(request,"index.html")
+    return render(request,"rooms.html")
 
 def rooms(request):
     if request.method=="POST":
