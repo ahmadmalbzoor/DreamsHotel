@@ -9,7 +9,11 @@ from . import models
 from .models import *
 
 class RoomAdmin(admin.ModelAdmin):
-      list_display = ('desc', 'room_name' , 'price' ,'hotel')
+     list_display = ('desc', 'room_name' , 'price' ,'hotel')
 
 
+class HotelAdmin(admin.ModelAdmin):
+      list_display = ('name', 'desc')
+
+admin.site.register(Hotel , HotelAdmin)
 admin.site.register(Room , RoomAdmin)
