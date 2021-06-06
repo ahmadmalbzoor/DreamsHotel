@@ -1,6 +1,22 @@
 from django.db import models
 from django.db.models.base import Model
 
+
+class BlogManager(models.Manager):
+    def basic_validator(self, postData):
+        errors = {}
+        regex=re.compile(r'^[a-zA-Z]+$')
+        # EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
+        # if not EMAIL_REGEX.match(postData['email']):           
+        #     errors['email'] = "Invalid email address!"
+        if len(postData['first_name']) < 2 :
+            errors["first_name"] = "First Name should be at least 2 characters and letters only"
+        if len(postData['last_name']) < 2 :
+            errors["last_name"] = "Last Name should be at least 2 characters and letters only" 
+        if len(postData['mobile']) < 10:
+            errors['mobile']="Please enter a valid mobile number"    
+        return errors 
+
 class Hotel(models.Model):
     name=models.CharField(max_length=255)
     desc=models.TextField()
@@ -14,6 +30,8 @@ class Customer(models.Model):
     email=models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    objects = BlogManager()
+
 
 class Room(models.Model):
     desc=models.TextField()
@@ -40,4 +58,7 @@ class RoomAvalability(models.Model):
     is_booked=models.BooleanField(default=False)
 
 
+def create_booking(first_name,last_name,phone,email):
+    new_booking=Customer.objects.create(first_name=first_name,last_name=last_name,phone=phone,email=email)
+    return new_booking
     
