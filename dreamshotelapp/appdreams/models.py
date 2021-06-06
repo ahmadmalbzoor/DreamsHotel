@@ -1,5 +1,7 @@
+
 from django.db import models
 from django.db.models.base import Model
+import re
 
 
 class BlogManager(models.Manager):
@@ -35,7 +37,6 @@ class Customer(models.Model):
 
 class Room(models.Model):
     desc=models.TextField()
-
     room_name=models.CharField(max_length=255)
     price=models.IntegerField()
     booking_by=models.ManyToManyField(Customer,through="Reversation") 
@@ -61,4 +62,3 @@ class RoomAvalability(models.Model):
 def create_booking(first_name,last_name,phone,email):
     new_booking=Customer.objects.create(first_name=first_name,last_name=last_name,phone=phone,email=email)
     return new_booking
-    

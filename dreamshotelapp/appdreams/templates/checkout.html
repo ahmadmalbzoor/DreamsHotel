@@ -52,7 +52,7 @@
             </div>
 
             <div class="payment">
-                <form action="voucher" method="post">
+                <form action="/check" method="POST">
                     {% csrf_token %}
                     <div>
                         <label >First Name</label>
@@ -64,7 +64,7 @@
                     </div>
                     <div>
                         <label for="">Email</label>
-                        <input type="text" name="email" id="" class="customerInfo" required><br>
+                        <input type="email" name="email" id="" class="customerInfo" required><br>
                     </div>
                     <div>
                         <label for="">Mobile Number</label>
