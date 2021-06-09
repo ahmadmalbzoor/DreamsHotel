@@ -1,0 +1,48 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif }
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 400%;
+}
+.map-container{
+overflow:hidden;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+#titlename
+{
+  text-align: center;
+  float: left;
+  margin-left: 13%;
+  margin-top: 0.72%;
+  font: 30px  cursive;  
+  color: white;
+  }
+
+  #about{
+    background-color: #bf8040;
+    color: white
+  }
+#desc{
+  text-align: justify;
+  
+}
+.navlist{
+  color: white;
+  margin-top: 6%;
+}
+
+#CheckAvailability{
+    width: 25%;
+}

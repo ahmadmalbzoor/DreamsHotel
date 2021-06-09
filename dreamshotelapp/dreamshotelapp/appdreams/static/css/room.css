@@ -1,0 +1,43 @@
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif }
+
+  #sidebar-wrapper {
+      right:0;
+      position: fixed;
+      height: 30%;
+      background: white;
+      border-left: 1px solid rgb(212, 210, 210);
+      width: 30%;
+      padding-left: 3%;
+  }
+ 
+
+  #price{
+      font-size: 15px;
+  }
+#card{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.card-body{
+  padding-left: 5%;
+}
+
+#titlename
+{
+  text-align: center;
+  float: left;
+  margin-left: 13%;
+  margin-top: 0.72%;
+  font: 30px  cursive;  
+  color: white;
+}
+.navlist{
+  color: white;
+  margin-top: 6%;
+}
+
+@media (min-height: 500px) {
+  .card-img-top {
+    height: 300px;
+    }
+}
